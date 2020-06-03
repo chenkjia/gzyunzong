@@ -1,0 +1,11 @@
+section#partner.partner.fdb-block
+  .container.partner-container
+    .partner-title
+      img.img-fluid(src="./img/partner-title.png", alt="合作媒体")
+    .partner-list.row
+      each i in [1,2,3,4,5,6]
+        .col-6.col-xl-4
+          .partner-box(class=`partner-${i}`)
+            img.img-fluid.partner-img(
+              alt="image"
+              src=`./img/partner-${i}-hover.png`)

@@ -1,0 +1,64 @@
+.intro
+  z-index: 18
+  min-height: 720px
+  background-image: url('../img/intro-bg.jpg')
+  position: relative
+  .container
+    height: 100%
+    position: relative
+    .intro-dot
+      position: relative
+      .intro-hack
+        position: absolute
+        z-index: -1
+        width: 14px
+        height: 14px
+        background: #f60
+        border-radius: 10px
+    .intro-case
+      .intro-hack
+        left: 13px
+        top: 314px
+    .intro-service
+      .intro-hack
+        left: 462px
+        top: 41px
+    .intro-team
+      .intro-hack
+        left: 128px
+        top: 394px
+@media (min-width: 1200px)
+  .intro
+    position: relative
+    .container
+      height: 720px
+      position: relative
+      .intro-dot
+        position: absolute
+        width: 14px
+        height: 14px
+        background: #f60
+        border-radius: 10px
+        .intro-hack
+          display: none
+        img
+          position: absolute
+          max-width: inherit
+      .intro-case
+        left: 40px
+        bottom: 100px
+        img
+          left: -14px
+          bottom: -74px
+      .intro-service
+        top: 0
+        right: 380px
+        img
+          top: -40px
+          right: -124px
+      .intro-team
+        right: 500px
+        bottom: 0
+        img
+          left: -128px
+          bottom: -43px

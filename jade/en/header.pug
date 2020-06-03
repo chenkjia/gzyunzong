@@ -1,0 +1,21 @@
+include nav.pug
+header
+  .container
+    a.logo(href="#")
+      .logo-img
+      .logo-text
+    nav.navbar.navbar-expand-md
+      button#navbar-toggler.navbar-toggler.collapsed(type="button",data-toggle="collapse" data-target="#navbarNav3",aria-controls="navbarNav3",ria-expanded="false",aria-label="Toggle navigation")
+        span.iconfont.icon-nav
+      #navbarNav3.navbar-collapse.collapse
+        ul.navbar-nav.ml-auto
+          each nav in navList
+            li.nav-item
+              a.nav-link(href=nav.href)= nav.label
+        a.nav-link(href="/") 中文
+      #navbar-small-nav.navbar-small-nav
+        ul.navbar-small-list
+          each nav in navList
+            li.nav-small-item
+              a.nav-small-link(href=nav.href)= nav.label
+        a.nav-small-link(href="/") 中文
